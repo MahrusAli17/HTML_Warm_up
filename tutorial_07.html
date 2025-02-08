@@ -4,8 +4,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tables in HTML</title>
+    <style>
+        body{
+            background-color: #414141;
+            color: white;
+        }
+        table{
+            padding: 23px;
+            width: 100%;
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+        th{
+            color: blue;
+            border: 2px solid blue;
+            padding: 12px;
+        }
+        
+        td {
+            color: lightgreen;
+            border: 2px solid lightgreen;
+            text-align: center;
+            padding: 12px;
+        }
+
+        tfoot td{
+            border: 2px solid red;
+        }
+    </style>
 </head>
 <body>
-    
+    <table>
+        <thead>
+            <tr>
+                <th>Roll Number</th>
+                <th>Name</th>
+                <th>Grade</th>
+                <th>Shift</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>01</td>
+                <td>Abdullah</td>
+                <td>C</td>
+                <td>Evening</td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>Asad</td>
+                <td>A</td>
+                <td>Night</td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>Ammar</td>
+                <td>B</td>
+                <td>Morning</td>
+            </tr>
+            <tr>
+                <td>04</td>
+                <td>Zain</td>
+                <td>C</td>
+                <td>Afternoon</td>
+            </tr>
+            <tr>
+                <td>05</td>
+                <td>Sajid</td>
+                <td>S</td>
+                <td>Noon</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr/>
+    <table>
+        <tr>
+            <th>Subjects</th>
+                <td>Arabic</td>
+                <td>Urdu</td>
+                <td>Math</td>
+        </tr>
+        <tr>
+            <th>Students</th>
+            <td>25</td>
+            <td>30</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <th>Present</th>
+                <td>25</td>
+                <td>29</td>
+                <td>45</td>
+        </tr>
+        <tr>
+            <th>Absent</th>
+                <td>-</td>
+                <td>1</td>
+                <td>5</td>
+        </tr>
+    </table>
+    <hr/>
+    <table>
+        <thead>
+            <tr>
+                <th>Arabic</th>
+                <th>Urdu</th>
+                <th>English</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>25</td>
+                <td>20</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>2</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+            <td>30</td>
+            <td>22</td>
+            <td>77</td>
+        </tr>
+    </tfoot>
+    </table>
 </body>
 </html>
