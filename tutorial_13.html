@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Assets/HTML5.png" type="image/x-icon">
+    <style>
+        body {
+            background-color: #414141;
+            color: white;
+            font-family: Raleway;
+        }
+
+        form {
+            padding: 2px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+    </style>
+    <title>Type of Input Form</title>
+</head>
+
+<body>
+    <form action="#" method="get">
+        <label for="first-name">First Name
+            <input type="text" name="" id="first-name" value="John">
+        </label>
+        <label for="last-name">Last Name
+            <input type="text" name="" id="last-name" value="Joe">
+        </label>
+        <label for="email">Email
+            <input type="email" name="" id="email" value="example@gmail.com">
+        </label>
+        <label for="DOB">Enter Your Date of Birth
+            <input type="date" name="" id="">
+        </label>
+        <label for="gender">Select Your Gender
+            <select name="" id="gender">
+                <option value="Man">Man</option>
+                <option value="Woman">Woman</option>
+            </select>
+        </label>
+        <label for="Editor">Select your Editor
+            <input list="Editor" name="Editors">  
+            <datalist id="Editor">
+                <option value="VS Code">VS Code</option>
+                <option value="Notepad">Notepad</option>
+                <option value="Wordpad">Wordpad</option>
+                <option value="Sublime">Sublime</option>
+            </datalist>
+        </label>
+        <label for="reset">
+            <input type="reset" value="Reset Now">
+        </label>
+        <label for="submit">
+            <input type="submit" value="Submit Now">
+        </label>
+        <input type="hidden" name="">
+
+
+
+    </form>
+</body>
+
+</html>
